@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script defer src="myscript.js"></script>
+ 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4837ec1867.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Project Tagging </title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src="https://rec-data.kalibrr.com/logos/7CFQHZBN5GDK2RSVVXZ9-5a1d1764.png" width="70" height="70" class="d-inline-block align-top" alt="">
+      <span class="ml-2" style="font-size: 40px;">HR</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto text-center">
+        <li class="nav-item active">
+          
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            My Requests
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">An item</a>
+            <a class="dropdown-item" href="#">Another item</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            My Team 
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">An item</a>
+            <a class="dropdown-item" href="#">Another item</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Company
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">An item</a>
+            <a class="dropdown-item" href="#">Another item</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Administration Tools
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Leave Report</a>
+            <a class="dropdown-item" href="#">Overtime Report</a>
+            <a class="dropdown-item" href="#">Attendance Management</a>
+            <a class="dropdown-item" href="#">Attendance Report</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Maintenance
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">An item</a>
+            <a class="dropdown-item" href="#">Another item</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+
+<!-- a form with an input field for searching employees-->
+        <form class="form-inline my-4 my-lg-0">
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Employee Search" style="margin-right: 20px;">
+          <div class="d-flex align-items-right">
+          <div class="ml-auto">
+            <i class="fas fa-search fa-2x fa-fw fa-inverse " style="margin-right: 10px;"></i>
+            <i class="fa fa-bell-o fa-2x fa-fw fa-inverse " style="margin-right: 10px;"></i>
+            <i class="fa fa-icon  rounded-circle bg-secondary text-light p-3" style="margin-right: 10px;"></i>
+          </div>
+          </div>
+        </form> 
+
+        <ul class="navbar-nav  ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-info" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Admin
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Profile</a>
+            <a class="dropdown-item" href="#">Settings</a>
+            <div class="dropdown-divider"></div>
+          </div>
+        </li> 
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-8">
+        <h4 class="">Project Tagging</h4>
+        <p>View or create projects, and assign members in projects for employees to log their progress.</p>
+      </div>
+      <div class="col- d-flex justify-content-end align-items-center ml-auto"> 
+          <button id="addRowBtn" class="btn btn-success"><i class="fas fa-plus mr-2"></i>Create a project</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="d-flex justify-content-start col-5"  style="margin: 10px;">
+  <div class="input-group">
+    <span class="input-group-text"><i class="fas fa-search"></i></span>
+    <input type="text" id="searchInput" class="form-control" >
+  </div>
+  <div class="border rounded d-flex align-items-center px-3 ms-3">
+    <span class="me-3">Status:</span>
+    <div class="position-relative">
+      <select class="form-select border-0 px-2 py-1" aria-label="Select status">
+        <optgroup label="Status">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="on-hold">On Hold</option>
+        </optgroup>
+      </select>
+    </div>
+    <i class="fa fa-times ms-3"></i>
+  </div>
+</div>
+
+
+<div style="margin: 25px; border: 1px solid #d1d1d1; "> 
+  <table id="myTable" class="table table-sm">
+    <thead class=" ">
+      <tr>
+        <th>Project Code</th>
+        <th>Project Name</th>
+        <th>Project Owner</th>
+        <th># of Assignees</th>
+        <th>Date Created</th>
+        <th>Updated By</th>
+        <th></th>
+      
+      </tr>
+    </thead>
+      <tbody>
+        <tr>
+         <td> PT</td>
+          <td>Project Tagging</td>
+          <td>Anti, Roy</td>
+          <td>7</td>
+          <td>08/16/2022</td>
+          <td>-</td>
+
+        </tr>
+       
+        <tr>
+          <td> TA</td>
+           <td>Time and Attendance</td>
+           <td>Rogers, Toby</td>
+           <td>11</td>
+           <td>12/10/2021</td>
+           <td>Rogers, Toby </td>
+           <td>IN PROGRESS</td>
+         </tr>
+         <tr>
+          <td> NE </td>
+           <td>Notification Engine</td>
+           <td>Tucas, Lobiel </td>
+           <td>7</td>
+           <td>01/28/2022</td>
+           <td>Tucas, Lobiel</td>
+           <td>ON HOLD</td>
+         </tr>
+         <tr>
+          <td> PS</td>
+           <td>Payroll Summary</td>
+           <td>Kim, Suzy</td>
+           <td>11</td>
+           <td>05/27/2020</td>
+           <td>Kim, Suzy</td>
+           <td>IN PROGRESS</td>
+         </tr>
+         <tr>
+          <td> AM</td>
+           <td>Announcement Mo...</td>
+           <td>Anti, Roy</td>
+           <td>7</td>
+           <td>08/16/2022</td>
+           <td>Ngo, Dung</td>
+           <td>NOT STARTED</td>
+         </tr>
+         <tr>
+          <td> FDTS </td>
+           <td>Future-dated Tagging</td>
+           <td>Longias, Antman</td>
+           <td>15</td>
+           <td>04/21/2021</td>
+           <td>Longias, Antman</td>
+           <td>COMPLETED</td>
+         </tr>
+         <tr>
+          <td> DTS </td>
+           <td>Date Tagging of Sc</td>
+           <td>Longias, Antman</td>
+           <td>15</td>
+           <td>09/04/2021</td>
+           <td>Longias, Antman</td>
+           <td>COMPLETED</td>
+         </tr>
+         <tr>
+          <td> AR-M</td>
+           <td>Attendance Reque...</td>
+           <td>Tucas, Lobiel</td>
+           <td>8</td>
+           <td>01/31/2021</td>
+           <td>Tucas, Lobiel</td>
+           <td>COMPLETED</td>
+         </tr>
+         <tr>
+          <td> AS</td>
+           <td>Account Settings</td>
+           <td>Shortjos, Dog</td>
+           <td>15</td>
+           <td>11/07/2020</td>
+           <td>Shortjos, Dog</td>
+           <td>ON HOLD</td>
+         </tr>
+         <tr>
+          <td> LE </td>
+           <td>Leave Enhancement</td>
+           <td>Shortjos, Dog</td>
+           <td>15</td>
+           <td>09/18/2020</td>
+           <td>Shortjos, Dog</td>
+           <td>ON HOLD</td>
+         </tr>
+          
+      </tbody>
+    </table>
+    </tbody>
+  </table>
+</div>
+
+    </tbody>
+  </table>
+</div>
+
+
+  <div id="myModal" class="modal">   <!-- a container div with a unique ID that is used to identify the modal window. -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <form>
+        <label for="projectCode">Project Code:</label> /*describes the input field that follows it*/
+        <input type="text" id="projectCode" name="projectCode"><br>
+  
+        <label for="projectName">Project Name:</label>
+        <input type="text" id="projectName" name="projectName"><br>
+  
+        <label for="projectOwner">Project Owner:</label>
+        <input type="text" id="projectOwner" name="projectOwner"><br>
+  
+        <label for="numAssignees"># of Assignees:</label>
+        <input type="number" id="numAssignees" name="numAssignees"><br>
+  
+        <label for="dateCreated">Date Created:</label>
+        <input type="date" id="dateCreated" name="dateCreated"><br>
+  
+        <label for="updatedBy">Updated By:</label>
+        <input type="text" id="updatedBy" name="updatedBy"><br>
+  
+          <!-- A dropdown menu that allows the user to select the status of a project-->
+        <label for="status">Status:</label> 
+        <select id="status" name="status" class="status-select">
+          <option value="COMPLETED" class="completed">COMPLETED</option>
+          <option value="INACTIVE" class="in-progress">IN PROGRESS</option>
+          <option value="ON HOLD" class="on-hold">ON HOLD</option>
+          <option value="NOT STARTED" class="not-started">NOT STARTED</option>
+        </select><br>
+        <input type="submit" value="Create Project" class="btn btn-success">
+      </form>
+    </div>
+  </div>
+
+
+  
+
+  <div class="fixed-bottom fixed-left bg-light p-2">
+    <div id="items-per-page">
+      <span>Items per page:</span>
+      <select id="items-per-page-select">
+        <option value="1">10</option>
+        <option value="20">20</option>
+        <option value="50">30</option>
+      </select>
+    </div>
+  </div>
+
+

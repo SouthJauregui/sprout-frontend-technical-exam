@@ -1,0 +1,69 @@
+
+.modal {
+    display: none; /* Hide the modal by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  
+  /* Add a grey background color on mouse-over */
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .previous-page-large, .next-page-large {
+    font-size: 24px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    margin-right: 10px;
+  }
+  .previous-page-small, .next-page-small {
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    margin-right: 10px;
+  }
+  .current-page {
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    margin-right: 10px;
+  }
+
+ 
+
